@@ -1,18 +1,15 @@
 use anyhow::Result;
-use bevy_asset::{AssetLoader, AssetPath, LoadContext, LoadedAsset};
-use bevy_ecs::{World, WorldBuilderSource};
-use bevy_math::Vec3;
-use bevy_pbr::prelude::{PbrComponents, StandardMaterial};
-use bevy_render::{
-    color::Color,
-    mesh::{shape::Cube, Mesh},
+use bevy::{
+    asset::{AssetLoader, AssetPath, LoadContext, LoadedAsset},
+    ecs::{World, WorldBuilderSource},
+    math::Vec3,
+    pbr::PbrBundle,
+    prelude::{
+        shape::Cube, BuildWorldChildren, Color, GlobalTransform, Mesh, Scene, StandardMaterial,
+        Transform,
+    },
+    utils::BoxedFuture,
 };
-use bevy_scene::Scene;
-use bevy_transform::{
-    hierarchy::BuildWorldChildren,
-    prelude::{GlobalTransform, Transform},
-};
-use bevy_utils::BoxedFuture;
 use dot_vox::DotVoxData;
 use thiserror::Error;
 
@@ -95,7 +92,7 @@ async fn load_vox<'a, 'b>(
                     let material_asset_path =
                         AssetPath::new_ref(load_context.path(), Some(&material_label));
 
-                    parent.spawn(PbrComponents {
+                    parent.spawn(PbrBundle {
                         mesh: load_context.get_handle(vox_asset_path),
                         material: load_context.get_handle(material_asset_path),
                         transform: Transform::from_translation(Vec3::new(

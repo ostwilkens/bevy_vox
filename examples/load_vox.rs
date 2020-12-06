@@ -5,21 +5,21 @@ fn main() {
     App::build()
         .add_plugins(DefaultPlugins)
         .add_plugin(VoxPlugin)
-        .add_startup_system(setup.system())
+        .add_startup_system(setup_system)
         .run();
 }
 
-fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
+fn setup_system(commands: &mut Commands, asset_server: Res<AssetServer>) {
     // add entities to the world
     commands
         .spawn_scene(asset_server.load("2x2x2.vox"))
         // light
-        .spawn(LightComponents {
+        .spawn(LightBundle {
             transform: Transform::from_translation(Vec3::new(4.0, 5.0, 4.0)),
             ..Default::default()
         })
         // camera
-        .spawn(Camera3dComponents {
+        .spawn(Camera3dBundle {
             transform: Transform::from_translation(Vec3::new(6.0, -6.0, 6.0))
                 .looking_at(Vec3::default(), Vec3::unit_y()),
             ..Default::default()

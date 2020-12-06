@@ -1,8 +1,6 @@
 mod loader;
+use bevy::prelude::{AddAsset, AppBuilder, Plugin};
 pub use loader::*;
-
-use bevy_app::prelude::*;
-use bevy_asset::AddAsset;
 
 /// Adds support for Vox file loading to Apps
 #[derive(Default)]
