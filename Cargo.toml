@@ -14,7 +14,7 @@ exclude = ["assets", "examples"]
 [dependencies]
 anyhow = "1.0"
 thiserror = "1.0"
-dot_vox = "4.1"
+dot_vox = {version = "4.1.0", git = "https://github.com/ostwilkens/dot_vox.git", branch = "serde"}
 
 [dependencies.bevy]
 git = "https://github.com/bevyengine/bevy"
