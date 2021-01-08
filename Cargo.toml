@@ -23,7 +23,7 @@ bevy_transform = "0.6.0"
 bevy_math = "0.6.0"
 anyhow = "1.0.36"
 thiserror = "1.0.22"
-dot_vox = "4.1.0"
+dot_vox = {version = "4.1.0", git = "https://github.com/ostwilkens/dot_vox.git", branch = "serde"}
 
 [dev-dependencies]
 bevy = "0.6.0"
