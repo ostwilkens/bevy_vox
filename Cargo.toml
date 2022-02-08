@@ -1,8 +1,8 @@
 [package]
 name = "bevy_vox"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["erasin <erasinoo@gmail.com>"]
-edition = "2018"
+edition = "2021"
 description = "Load MagicaVoxel Vox file for bevy engine "
 license = "MIT"
 repository = "https://github.com/erasin/bevy_vox"
@@ -12,18 +12,18 @@ keywords = ['voxel', 'MagicaVoxel', 'game', 'bevy']
 exclude = ["assets", "examples"]
 
 [dependencies]
-bevy_ecs = "0.4.0"
-bevy_app = "0.4.0"
-bevy_asset = "0.4.0"
-bevy_render = "0.4.0"
-bevy_utils = "0.4.0"
-bevy_pbr = "0.4.0"
-bevy_scene = "0.4.0"
-bevy_transform = "0.4.0"
-bevy_math = "0.4.0"
-anyhow = "1.0"
-thiserror = "1.0"
+bevy_ecs = "0.6.0"
+bevy_app = "0.6.0"
+bevy_asset = "0.6.0"
+bevy_render = "0.6.0"
+bevy_utils = "0.6.0"
+bevy_pbr = "0.6.0"
+bevy_scene = "0.6.0"
+bevy_transform = "0.6.0"
+bevy_math = "0.6.0"
+anyhow = "1.0.36"
+thiserror = "1.0.22"
 dot_vox = {version = "4.1.0", git = "https://github.com/ostwilkens/dot_vox.git", branch = "serde"}
 
 [dev-dependencies]
-bevy = "0.4.0"
+bevy = "0.6.0"
