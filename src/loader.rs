@@ -1,6 +1,7 @@
 use anyhow::Result;
 use bevy_asset::{AssetLoader, AssetPath, LoadContext, LoadedAsset};
 use bevy_ecs::world::World;
+use bevy_hierarchy::BuildWorldChildren;
 use bevy_math::Vec3;
 use bevy_pbr::prelude::{PbrBundle, StandardMaterial};
 use bevy_render::{
@@ -8,10 +9,7 @@ use bevy_render::{
     mesh::{shape::Cube, Mesh},
 };
 use bevy_scene::Scene;
-use bevy_transform::{
-    hierarchy::BuildWorldChildren,
-    prelude::{GlobalTransform, Transform},
-};
+use bevy_transform::prelude::{GlobalTransform, Transform};
 use bevy_utils::BoxedFuture;
 use dot_vox::DotVoxData;
 use thiserror::Error;
