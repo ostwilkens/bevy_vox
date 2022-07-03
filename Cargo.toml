@@ -27,4 +27,4 @@ thiserror = "1.0.31"
 dot_vox = {version = "4.1.0", git = "https://github.com/ostwilkens/dot_vox.git", branch = "serde"}
 
 [dev-dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy", rev = "8b27124a801d83a1e92f1136ebd2bc9752c3e9d7" }
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "8f721d8d0ac2e14a46051175f6d3394ed87c7214" }
