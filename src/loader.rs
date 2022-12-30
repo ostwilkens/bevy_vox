@@ -84,8 +84,7 @@ async fn load_vox<'a, 'b>(
 
     for model in data.models.iter() {
         world
-            .spawn()
-            .insert_bundle((Transform::identity(), GlobalTransform::identity()))
+            .spawn((Transform::IDENTITY, GlobalTransform::IDENTITY))
             .with_children(|parent| {
                 for vox in model.voxels.iter() {
                     let vox_asset_path = AssetPath::new_ref(load_context.path(), Some("cube"));
@@ -94,7 +93,7 @@ async fn load_vox<'a, 'b>(
                     let material_asset_path =
                         AssetPath::new_ref(load_context.path(), Some(&material_label));
 
-                    parent.spawn_bundle(PbrBundle {
+                    parent.spawn(PbrBundle {
                         mesh: load_context.get_handle(vox_asset_path),
                         material: load_context.get_handle(material_asset_path),
                         transform: Transform::from_translation(Vec3::new(

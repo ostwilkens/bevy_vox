@@ -12,19 +12,19 @@ keywords = ['voxel', 'MagicaVoxel', 'game', 'bevy']
 exclude = ["assets", "examples"]
 
 [dependencies]
-bevy_ecs = "0.8.0"
-bevy_app = "0.8.0"
-bevy_asset = "0.8.0"
-bevy_render = "0.8.0"
-bevy_utils = "0.8.0"
-bevy_pbr = "0.8.0"
-bevy_scene = "0.8.0"
-bevy_transform = "0.8.0"
-bevy_math = "0.8.0"
-bevy_hierarchy = "0.8.0"
+bevy_ecs = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_app = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_asset = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_render = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_utils = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_pbr = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_scene = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_transform = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_math = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_hierarchy = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
 anyhow = "1.0.58"
 thiserror = "1.0.31"
 dot_vox = {version = "4.1.0", git = "https://github.com/ostwilkens/dot_vox.git", branch = "serde"}
 
 [dev-dependencies]
-bevy = "0.8.0"
+bevy = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
