@@ -12,19 +12,19 @@ keywords = ['voxel', 'MagicaVoxel', 'game', 'bevy']
 exclude = ["assets", "examples"]
 
 [dependencies]
-bevy_ecs = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_app = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_asset = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_render = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_utils = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_pbr = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_scene = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_transform = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_math = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
-bevy_hierarchy = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy_ecs = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_app = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_asset = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_render = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_utils = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_pbr = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_scene = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_transform = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_math = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
+bevy_hierarchy = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
 anyhow = "1.0.58"
 thiserror = "1.0.31"
 dot_vox = {version = "4.1.0", git = "https://github.com/ostwilkens/dot_vox.git", branch = "serde"}
 
 [dev-dependencies]
-bevy = { git = "https://github.com/IceSentry/bevy.git", rev="2b0f4f9053f58bd9c41ee2f8acb1f5e843161c75" }
+bevy = { git = "https://github.com/ostwilkens/bevy.git", rev="992f24c7c4d7035c28ce1e767905b19a6e2c24c1" }
